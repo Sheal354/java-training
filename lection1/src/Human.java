@@ -1,15 +1,15 @@
 public class Human extends Creature{
     Human(String name) {
-        this.name = name;
+        setName(name);
     }
 
     @Override
     String makeSound() {
-        return "Hello, my name is " + name + "\n";
+        return "Hello, my name is " + this.getName() + "\n";
     }
 
     public void putOn(Cloathes cloathes) {
-        switch (cloathes.slot) {
+        switch (cloathes.getSlot()) {
             case "head" -> {
                 this.head = cloathes;
                 cloathes.newUser(this);
@@ -23,5 +23,15 @@ public class Human extends Creature{
                 cloathes.newUser(this);
             }
         }
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
     }
 }

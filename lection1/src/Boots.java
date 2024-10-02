@@ -1,7 +1,24 @@
 public class Boots extends Cloathes{
     Boots() {
-        this.name = "Boots";
-        this.slot = "feet";
+        setName("Boots");
+        setSlot("feet");
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+    @Override
+    public String getSlot() {
+        return this.slot;
+    }
+    @Override
+    public void setSlot(String slot) {
+        this.slot = slot;
     }
 
     @Override

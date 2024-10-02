@@ -1,7 +1,7 @@
 public class Shirt extends Cloathes implements Ironing{
     Shirt() {
-        this.name = "Shirt";
-        this.slot = "torso";
+        setName("Shirt");
+        setSlot("torso");
     }
 
     @Override
@@ -14,6 +14,24 @@ public class Shirt extends Cloathes implements Ironing{
 
     @Override
     public void ironing() {
-        this.name = "Ironed shirt";
+        this.setName("IronedShirt");
     }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+    @Override
+    public String getSlot() {
+        return this.slot;
+    }
+    @Override
+    public void setSlot(String slot) {
+        this.slot = slot;
+    }
+
 }

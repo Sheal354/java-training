@@ -1,7 +1,7 @@
 public class Hat extends Cloathes{
     Hat() {
-        this.name = "Hat";
-        this.slot = "head";
+        setName("Hat");
+        setSlot("head");
     }
     @Override
     void newUser(Creature user2) {
@@ -9,5 +9,22 @@ public class Hat extends Cloathes{
             user.head = null;
         }
         this.user = user2;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+    @Override
+    public String getSlot() {
+        return this.slot;
+    }
+    @Override
+    public void setSlot(String slot) {
+        this.slot = slot;
     }
 }

@@ -1,10 +1,6 @@
 public class Dog extends Creature implements Tamable{
     Dog() {
-        this.name = "Dog";
-    }
-
-    public void giveName(String name) {
-        this.name = name;
+        setName("Dog");
     }
 
     @Override
@@ -14,17 +10,27 @@ public class Dog extends Creature implements Tamable{
 
     @Override
     void putOn(Cloathes cloathes) {
-        if (cloathes.slot.equals("head")) {
+        if (cloathes.getSlot().equals("head")) {
             this.head = cloathes;
             cloathes.newUser(this);
         } else {
-            System.out.println(name + " cant wear " + cloathes.name + "\n");
+            System.out.println(this.getName() + " cant wear " + cloathes.getName() + "\n");
         }
 
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
     public void tame() {
-        this.name = "Domestic" + name;
+        this.setName("Domestic" + this.getName());
     }
 }
