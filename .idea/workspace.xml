@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5bb7946-008d-44cd-8f55-2b966600970f" name="Changes" comment="resolved" />
+    <list default="true" id="c5bb7946-008d-44cd-8f55-2b966600970f" name="Changes" comment="merge from lection_1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +56,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Admin/IdeaProjects/java-training",
     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/java-training/lection1/src/Main.java",
@@ -126,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730204416848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="merge from lection_1">
+      <option name="closed" value="true" />
+      <created>1730204954363</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730204954363</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +166,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="gitignore added" />
     <MESSAGE value="resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolved" />
+    <MESSAGE value="merge from lection_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge from lection_1" />
   </component>
 </project>
