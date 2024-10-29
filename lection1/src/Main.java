@@ -6,18 +6,22 @@ public class Main {
         Dog dog = new Dog();
         Snake snake = new Snake();
         Hat hat = new Hat();
-        System.out.println("Example of static method work before adding new creature: snake.getTotalCreatures() = " + snake.getTotalCreatures() + "\n");
+        System.out.println("Example of static method work before adding new creature:" +
+                " snake.getTotalCreatures() = " + snake.getTotalCreatures() + "\n");
         Shirt shirt = new Shirt();
         Boots boots = new Boots();
         System.out.println("Enter your name:\n");
         Scanner sc = new Scanner(System.in);
         Human user = new Human(sc.nextLine());
-        System.out.println("Example of static method work after adding new creature: user.getTotalCreatures() = " + user.getTotalCreatures() + "\n");
+        System.out.println("Example of static method work after adding new creature:" +
+                " user.getTotalCreatures() = " + user.getTotalCreatures() + "\n");
         System.out.println("Same goes for snake.getTotalCreatures now = " + snake.getTotalCreatures() + "\n");
 
         while(true) {
             System.out.println("Make interaction with:\n");
-            System.out.println(user.getName() + " " + john.getName() + " " + dog.getName() + " " + snake.getName() + " " + hat.getName() + " " + shirt.getName() + " " + boots.getName() + "\n");
+            System.out.println(user.getName() + " " + john.getName() + " " + dog.getName() +
+                    " " + snake.getName() + " " + hat.getName() + " " + shirt.getName() + " " +
+                    boots.getName() + "\n");
             String choice = sc.nextLine();
 
             if(choice.equals(user.getName())) {
@@ -29,7 +33,8 @@ public class Main {
                 }
                 else if (choice2.equals("2")) {
                     System.out.println("Choose clothes:\n");
-                    System.out.println(hat.getName() + " " + shirt.getName() + " " + boots.getName() + "\n");
+                    System.out.println(hat.getName() + " " + shirt.getName() + " " +
+                            boots.getName() + "\n");
                     choice2 = sc.nextLine();
                     if(choice2.equals(hat.getName())) {
                         user.putOn(hat);
@@ -169,7 +174,8 @@ public class Main {
                 String choice2 = sc.nextLine();
                 if(choice2.equals("1")) {
                     System.out.println("Choose user:\n");
-                    System.out.println(user.getName() + " " + john.getName() + " " + dog.getName() + " " + snake.getName() + "\n");
+                    System.out.println(user.getName() + " " + john.getName() + " " +
+                            dog.getName() + " " + snake.getName() + "\n");
                     choice2 = sc.nextLine();
                     if(choice2.equals(user.getName())) {
                         user.putOn(hat);
@@ -204,7 +210,8 @@ public class Main {
                 String choice2 = sc.nextLine();
                 if(choice2.equals("1")) {
                     System.out.println("Choose user:\n");
-                    System.out.println(user.getName() + " " + john.getName() + " " + dog.getName() + " " + snake.getName() + "\n");
+                    System.out.println(user.getName() + " " + john.getName() + " " + dog.getName() +
+                            " " + snake.getName() + "\n");
                     choice2 = sc.nextLine();
                     if(choice2.equals(user.getName())) {
                         user.putOn(shirt);
@@ -242,7 +249,8 @@ public class Main {
                 String choice2 = sc.nextLine();
                 if(choice2.equals("1")) {
                     System.out.println("Choose user:\n");
-                    System.out.println(user.getName() + " " + john.getName() + " " + dog.getName() + " " + snake.getName() + "\n");
+                    System.out.println(user.getName() + " " + john.getName() + " " + dog.getName() +
+                            " " + snake.getName() + "\n");
                     choice2 = sc.nextLine();
                     if(choice2.equals(user.getName())) {
                         user.putOn(boots);
