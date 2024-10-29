@@ -18,7 +18,8 @@ public class Main {
         }
     }
 
-    public static boolean validate(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
+    public static boolean validate(String login, String password, String confirmPassword)
+            throws WrongLoginException, WrongPasswordException {
         if (!login.matches("[a-zA-Z0-9_]+") ) {
             throw new WrongLoginException("Wrong login: unknown symbol");
         }
