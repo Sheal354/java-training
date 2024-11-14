@@ -44,22 +44,6 @@ public class Lection2 {
     }
 }
 
-class WrongLoginException extends Exception {
-    public WrongLoginException() {
-        super("WrongLoginException");
-    }
 
-    public WrongLoginException(String message) {
-        super(message);
-    }
-}
 
-class WrongPasswordException extends Exception {
-    public WrongPasswordException() {
-        super("WrongPasswordException");
-    }
 
-    public WrongPasswordException(String message) {
-        super(message);
-    }
-}
