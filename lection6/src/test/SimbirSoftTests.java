@@ -45,7 +45,8 @@ public class SimbirSoftTests extends BaseTest {
         page(MainPage.class)
                 .goToVacancies()
                 .vacanciesPageIsOpen()
-                .showMoreInfo();
+                .showMoreInfo()
+                .goToSdet();
         sleep(7000);
     }
 }
