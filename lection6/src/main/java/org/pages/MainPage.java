@@ -20,9 +20,15 @@ public class MainPage {
     @FindBy(xpath = "//a[@data-gclick='showModalFeedback']")
     private SelenideElement feedbackButton;
 
+    /**
+     * Надпись в меню "О нас".
+     */
     @FindBy(xpath = "//*[contains(@class,'gh-nav-item--about')]")
     private SelenideElement navItemAbout;
 
+    /**
+     * Кнопка в меню "Вакансии".
+     */
     @FindBy(xpath = "//a[@href='/vacancies/']")
     private SelenideElement navItemVacancies;
 
@@ -41,6 +47,10 @@ public class MainPage {
         return page(FeedbackModal.class);
     }
 
+    /**
+     * Проверяет, что при наведении на элемент меню О нас появляется ссылка Контакты.
+     * @return экземпляр класса ContactsPage
+     */
     @Step("Проверить, что при наведении на элемент меню О нас появляется ссылка Контакты")
     public ContactsPage goToContacts() {
         navItemAbout
@@ -52,6 +62,10 @@ public class MainPage {
         return page(ContactsPage.class);
     }
 
+    /**
+     * Проверяет, что элемент меню Вакансии присутствует и перенаправляет на страницу Вакансии.
+     * @return экземпляр класса VacanciesPage
+     */
     @Step("Проверить, что элемент меню Вакансии присутствует и перенаправляет на страницу Вакансии")
     public VacanciesPage goToVacancies() {
         navItemVacancies

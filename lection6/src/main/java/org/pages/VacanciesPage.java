@@ -9,14 +9,27 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 
+/**
+ * Класс страницы "Вакансии".
+ */
 public class VacanciesPage {
 
+    /**
+     * Кнопка "Показать еще".
+     */
     @FindBy(xpath = "//div[contains(@class,'list-layout-more')]/child::div")
     private SelenideElement showMoreButton;
 
+    /**
+     * Кнопка "SDET".
+     */
     @FindBy(xpath = "//a[@data-name='SDET']")
     private SelenideElement sdetButton;
 
+    /**
+     * Проверяет, что что страница Вакансии открылась.
+     * @return текущий экземпляр класса
+     */
     @Step("Проверить, что страница Вакансии открылась")
     public VacanciesPage vacanciesPageIsOpen() {
         $(By.xpath("//h1"))
@@ -26,6 +39,10 @@ public class VacanciesPage {
         return this;
     }
 
+    /**
+     * Проверяет, что кнопка "Показать еще" присутствует и кликабельна.
+     * @return текущий экземпляр класса
+     */
     @Step("Проверить, что кнопка Показать еще присутствует и кликабельна")
     public VacanciesPage showMoreInfo() {
         showMoreButton
@@ -37,6 +54,10 @@ public class VacanciesPage {
         return this;
     }
 
+    /**
+     * Проверяет, что кнопка SDET присутствует, видима и кликабельна.
+     * @return текущий экземпляр класса
+     */
     @Step("Проверить, что кнопка SDET присутствует и кликабельна")
     public VacanciesPage goToSdet() {
         sdetButton
